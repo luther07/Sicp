@@ -24,7 +24,7 @@ Exercise 1.10
 
 (defun g (n)
   (A 1 n))
-;; (g n) computes exp(2,n)
+;; (g n) computes pow(2,n)
 (g 16)
 (defun h (n)
   (A 2 n))
@@ -37,8 +37,8 @@ Exercise 1.10
 (h 4)
 ;; 65536
 
-;; exp(2,exp(2,n-1))
+;; pow(2,pow(2,n-1))
 
 (defun k (n)
   (* 5 n n))
-;; (k n) computes 5*exp(n,2)
+;; (k n) computes 5*pow(n,2)
